@@ -1,1 +1,22 @@
-
+{
+  "source": ["./style-dictionary/properties/**/*.json"],
+  "platforms": {
+    "scss": {
+      "transformGroup": "css",
+      "buildPath": "./src/style-dictionary-dist/",
+      "prefix": "token",
+      "files": [{
+        "destination": "variables.css",
+        "format": "css/variables"
+      }]
+    },
+    "js": {
+      "transformGroup": "js",
+      "buildPath": "./src/style-dictionary-dist/",
+      "files": [{
+        "destination": "variables.js",
+        "format": "javascript/es6"
+      }]
+    }
+  }
+}
